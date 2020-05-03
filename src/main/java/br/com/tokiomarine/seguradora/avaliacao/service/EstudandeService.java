@@ -8,11 +8,14 @@ import br.com.tokiomarine.seguradora.avaliacao.entidade.Estudante;
 
 public interface EstudandeService {
 
-	List<Estudante> buscarEstudantes();
+	public List<Estudante> buscarEstudantes();
 
-	void cadastrarEstudante(@Valid Estudante estudante);
+	public void cadastrarEstudante(@Valid Estudante estudante);
 
-	Estudante buscarEstudante(long id);
+	public Estudante buscarEstudantePorId(long id);
 
-	void atualizarEstudante(@Valid Estudante estudante);
+	public void atualizarEstudante(@Valid Estudante estudante);
+
+	public void excluirEstudante(long id);
+
 }
